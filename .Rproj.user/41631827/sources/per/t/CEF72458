@@ -1,0 +1,24 @@
+{
+    "id": "CEF72458",
+    "path": "~/GitHub/online-presentation/scripts/fake_data_script.R",
+    "project_path": "scripts/fake_data_script.R",
+    "type": "r_source",
+    "hash": "291940072",
+    "contents": "",
+    "dirty": false,
+    "created": 1617668545378.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "81,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1617656960,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1617656960,
+    "read_only": false,
+    "read_only_alternatives": []
+}

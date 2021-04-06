@@ -1,0 +1,1887 @@
+/* CSS Reset */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+form, table, tr, td,
+div, p, img, pre, iframe {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 1366px;
+  overflow: auto;
+  width: 100%;
+}
+
+input, textarea, button, select {
+    margin:0;
+}
+
+input#search-words {
+  outline: none;
+}
+
+/* Basic HTML Element Styling */
+
+body {
+  background-color: rgb(204,204,204);
+  color: #000000;
+  font: Arial;
+  font-size: 1em;
+  overflow-x: hidden;
+}
+
+div, header, footer, article {
+  position: relative;
+  width: auto;
+}
+
+/* Generic Classes */
+
+.button-print {
+  font-size: 18px;
+}
+
+.textindent {
+  text-indent: 10px;
+}
+
+.bgdarkblue {
+  background-color: rgb(16, 63, 150);
+}
+
+.bgblue {
+  background-color: rgb(20, 123, 192);
+}
+
+.bgdarkblue, .bgblue {
+  color: #FFF;
+  font-size: 20px;
+  padding-top: 8px;
+  height: 29px;
+}
+
+.buylist_actions {
+  font-size: 21.4px;
+  margin-left: 8px;
+}
+
+.buylist_tutorials_title {
+  font-size: 21.25px;
+}
+
+.buylist_videos {
+  margin: 0px auto;
+  width: 94%;
+}
+
+.buyUploadHeader {
+  text-indent: 7px;
+}
+
+.upload-notification {
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.BuylistBonus {
+  float: left;
+  height: 118px;
+  margin-bottom: 10px;
+  width: 390px;
+}
+
+.BuylistBonus img {
+  height: auto;
+  width: 100%;
+}
+
+.feedback-title {
+  background: #B1FFB1;
+  border-bottom: 1px solid rgb(20, 123, 192);
+  font-size: 18px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  text-indent: 5px;
+  width: 100%;
+}
+
+.shipping-rate {
+  float: right;
+  font-weight: bold;
+}
+
+.summarybg {
+  background-color: #FFF !important;
+}
+
+.whitebg {
+  background-color: #FFF !important;
+}
+
+.trollcash {
+  color: #FFF;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+  border: 1px solid #004b00;
+  display:block;
+  width: auto !important;
+  padding: 1em 2em;
+  margin: .5em 0em 0em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.largeFont {
+  font-size: 18px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: #000;
+  opacity: 0.5;
+  display: none;
+}
+
+.product_filter {
+  border: 1px solid #CCC;
+  height: 37px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-indent: 5px;
+  width: 98.8%;
+}
+
+.step {
+  background-color: rgb(199, 229, 249);
+  border-bottom: 1px solid rgb(20, 123, 192);
+  border-top: 1px solid rgb(20, 123, 192);
+  margin-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-indent: 5px;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.negative {
+  color: red;
+}
+
+.pad-left {
+  padding-left: 5px;
+}
+
+.pad-right {
+  padding-right: 5px;
+}
+
+.positive {
+  color: green;
+}
+
+.webcredit {
+  display: none;
+}
+
+.indent-it {
+  position: relative;
+  left: 5px;
+}
+
+.main-list {
+  position: relative;
+  left: 50px;
+  width: calc(100% - 25px);
+}
+
+.list2 {
+  font-size: 0.9em;
+  list-style-type: none;
+  padding-bottom: 7px;
+  position: relative;
+  left: 10px;
+  width: calc(100% - 35px);
+ }
+
+ .hidden {
+  display: none;
+ }
+
+ .no-results {
+  padding-left: 15px;
+ }
+
+ .not-available {
+   font-weight: 700;
+   text-decoration: underline;
+ }
+
+.BuylistBonus {
+  background-color:  #147BC0;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  text-align: center;
+}
+
+.BuylistBonus .line1{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: .9;
+  padding-top: 5px;
+}
+
+.BuylistBonus .line2{
+  font-size: 60px;
+  font-weight: bold;
+  line-height: .9;
+}
+
+.BuylistBonus .line3{
+  font-size: 16px;
+  line-height: .9;
+}
+
+/* Buylist AJAX Loading */
+
+.loading {
+  background-color: #FFF;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 90px;
+  position: absolute;
+  left: 450px;
+  top: 50px;
+  width: 300px;
+  z-index: 9999;
+}
+
+.loading .loading-img {
+  height: 32px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32px;
+}
+
+.loading .loading-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.progress {
+  background-color: #FFF;
+  border-color: #FFF;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 99px;
+  position: absolute;
+  left: 85px;
+  top: 106px;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  z-index: 9999;
+}
+
+.progress span {
+  font-size: 1.2em;
+  width: 100px;
+}
+
+.progress .barcontainer {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 280px;
+}
+
+.progress .bar {
+  background:
+    repeating-linear-gradient(
+      -55deg,
+      #222,
+      #222 10px,
+      #333 10px,
+      #333 20px
+    ),
+    linear-gradient(
+      to bottom,
+      #eee,
+      #999
+    );
+  border-radius: 2px;
+  height: 50px;
+  width: 0px;
+}
+
+.sell-us-product {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+.use-this-page-title {
+  font-size: 21.25px;
+  font-weight: bold;
+  position: relative;
+  left: 24px;
+}
+
+/* Buylist Table classes */
+
+.buylist_product_table {
+  width: 100%;
+}
+
+.buylist_set {
+  width: 16%;
+}
+
+.buylist_set.item {
+  font-size: 13px;
+  text-indent: 10px;
+}
+
+.buylist_productname {
+  width: 22%;
+}
+
+.buylist_productname.item {
+  font-size: 14px;
+}
+
+.buylist_condition {
+  width: 10%;
+  font-size:.7em;
+}
+
+.merchant_mycost {
+  width: 33%;
+}
+
+.merchant_myretailprice {
+  width: 32%;
+}
+
+.buylist_buyprice {
+  width: 1%;
+}
+
+.buylist_buyqty {
+  width: 3%;
+}
+
+.buylist_sellqty {
+  width: 5%;
+}
+
+.buylist_add {
+  width: 3%;
+}
+
+.buylist_add span {
+  color: #008000;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 1.15em;
+}
+
+.buylist_clear {
+  width: 5%;
+}
+
+.buylist_clear span {
+  color: #F00;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 1.15em;
+}
+
+/* Cart Review Table */
+
+.cartreview_product_table {
+  width: 100%;
+}
+
+.cartreview_set {
+  width: 16%;
+}
+
+.cartreview_set.item {
+  font-size: 13px;
+  text-indent: 10px;
+}
+
+.cartreview_productname {
+  width: 40%;
+}
+
+.cartreview_productname.item {
+  font-size: 14px;
+}
+
+.cartreview_condition {
+  width: 25%;
+}
+
+.cartreview_buyprice {
+  width: 1%;
+}
+
+.cartreview_buyqty {
+  width: 1%;
+}
+
+.cartreview_sellqty {
+  width: 5%;
+}
+
+.cartreview_cart_totalprice {
+  width: 10%;
+}
+
+.continue-selling, .complete-order {
+  background: rgb(20,123,192);
+  background: -moz-linear-gradient(top,  rgba(20,123,192,1) 1%, rgba(16,63,150,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(20,123,192,1)), color-stop(100%,rgba(16,63,150,1)));
+  background: -webkit-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -o-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: linear-gradient(to bottom,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: bold;
+  height: 34px;
+  width: 99%;
+}
+
+.pagination {
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.pagination ul {
+
+  display: inline;
+  list-style: none;
+}
+
+.pagination ul li {
+  display: inline;
+  height: 24px;
+}
+
+.pagination ul li button {
+  background-color: rgb(64, 64, 64);
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: bold;
+  height: 24px;
+}
+
+.pagination ul li button.pageselected {
+  background-color: rgb(16, 63, 150);
+}
+
+/*adjustments for screen resolution*/
+/*
+@media only screen and (max-width: 1700px) {
+  #buylistHeader .searchDiv input { width:70%; }
+}
+@media only screen and (max-width: 1500px) {
+  #buylistHeader .searchDiv, #header_container .search input#topsearchbar{ width:70%; }
+  #buylistHeader .searchDiv input { width:65%; }
+  #buylistHeader .searchDiv select { width:140px; }
+  #buylist_top_right_col { background-size:830px; }
+  .howtosell { height: 140px; }
+  div.buylist_upload { width:36%; }
+  div.buylist_info { width:59%; }
+}
+@media only screen and (max-width: 1250px) {
+  #buylistHeader .searchDiv, #header_container .search input#topsearchbar{ width:63%; }
+  #buylistHeader .searchDiv input { width:55%; }
+  #buylist_top_right_col { background-size:650px; }
+  .howtosell { height: 110px; }
+}
+@media only screen and (max-width: 1050px) {
+  #buylistHeader .searchDiv { width:57%; }
+  #buylist_top_right_col { background-size:450px; }
+  .howtosell { height: 75px; }
+  .buylist.warning { position:absolute; }
+}
+@media only screen and (min-width: 1200px) {
+  #buylistHeader { position: fixed; }
+}
+*/
+
+/* HEADER */
+
+/* Buylist Opt-Out */
+.buylist.warning {
+  border-radius: 0;
+  background-color: #FFC;
+  height: 36px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-indent: 15px;
+  min-width: 950px;
+  width: 100%;
+}
+
+#buylistHeader, #buylist_container {
+  min-width: 950px;
+  width: 100%;
+}
+
+#buylistHeader {
+  height: 97px;
+  margin-bottom: 3px;
+}
+
+#buylistHeader div.upper {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/BuylistHeaderBg.png) repeat-x left top;
+  height: 63px;
+  min-width: 950px;
+  width: 100%;
+}
+
+#buylistHeader div.upper div.HeaderLogo {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/BuyingCenterLogoTransparency.png) no-repeat left top;
+  cursor: pointer;
+  float: left;
+  height: 66px;
+  top: 10px;
+  left: 7px;
+  width: 428px;
+  z-index: 1;
+}
+
+#buylistHeader div.upper div.UpperHeaderNav {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/NewBuyingCenterLogoTransparency.png) no-repeat left top;
+  cursor: pointer;
+  float: left;
+  height: 55px;
+  left: 55px;
+  top: 5px;
+  width: 406px;
+}
+
+#buylistHeader div.upper div.SearchInfo {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/barbanner.png) no-repeat left top;
+  float: left;
+  height: 90px;
+  left: 60px;
+  width: 250px;
+  z-index: 9999;
+}
+
+#buylistHeader div.lower, #buylistHeader div.lower form, #buylistHeader div.lower form #search-element,
+#buylistHeader div.lower form #search-element #searchDiv, #buylistHeader div.lower #accountDiv {
+  height: 34px;
+}
+
+#buylistHeader div.lower #searchDiv {
+  left: 74px;
+  z-index: 2;
+}
+
+#buylistHeader div.lower #searchDiv, #buylistHeader div.lower #accountDiv {
+  float: left;
+  padding: 5px;
+}
+
+#buylistHeader div.lower {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/ToolbarBg.png) repeat-x left top;
+  min-width: 950px;
+  width: 100%;
+}
+
+#buylistHeader div.lower form {
+  float: left;
+  position: absolute;
+  width: 66.9838%;
+}
+
+#buylistHeader div.lower form #search-element, #buylistHeader div.lower form #search-element #searchDiv {
+  position: relative;
+  width: 100%;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar {
+  border: 1px solid #000;
+  float: left;
+  height: 21px;
+  width: 825px;
+  border-radius: 3px;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar div#selected-department,
+#buylistHeader div.lower form #search-element #searchDiv #searchbar div#search-downarrow,
+#buylistHeader div.lower form #search-element #searchDiv #searchbar input#search-words,
+#buylistHeader div.lower form #search-element #searchDiv #searchbar button#search-submit {
+  float: left;
+  height: 21px;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar div#selected-department {
+  background: rgb(20,123,192);
+  background: -moz-linear-gradient(top,  rgba(20,123,192,1) 1%, rgba(16,63,150,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(20,123,192,1)), color-stop(100%,rgba(16,63,150,1)));
+  background: -webkit-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -o-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: linear-gradient(to bottom,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  border-right: 1px solid #FFF;
+  color: #FFF;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-align: center;
+  width: 215px;
+  opacity:0.9;
+  cursor: pointer;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar div#selected-department:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border:10px solid transparent;
+  border-top:10px solid white;
+  border: 6px solid transparent;
+  border-top: 8px solid white;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  z-index:-1;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar #search-category {
+  background: transparent;
+  color: #fff;
+  border: none;
+  height: 20px;
+  width: 235px;
+  cursor: pointer;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar #search-category option {
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar div#search-downarrow div.triangle {
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: #ffffff transparent transparent transparent;
+  height: 0;
+  margin: 0px auto;
+  top: 8px;
+  width: 0;
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar input#search-words {
+  border: none;
+  color: rgb(153,153,153);
+  font-style: italic;
+  height: 19px;
+  text-indent: 10px;
+  width: calc(100% - 257px);
+}
+
+#buylistHeader div.lower form #search-element #searchDiv #searchbar button#search-submit {
+  background: rgb(20,123,192);
+  background: -moz-linear-gradient(top,  rgba(20,123,192,1) 1%, rgba(16,63,150,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(20,123,192,1)), color-stop(100%,rgba(16,63,150,1)));
+  background: -webkit-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -o-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  background: linear-gradient(to bottom,  rgba(20,123,192,1) 1%,rgba(16,63,150,1) 100%);
+  border: none;
+  color: #FFF;
+  float: right;
+  width: 35px;
+  cursor: pointer;
+}
+
+#buylistHeader div.lower #accountDiv {
+  float: right;
+  min-width: 311px;
+}
+
+#buylistHeader div.lower #accountDiv a:link, #buylistHeader div.lower #accountDiv a:visited,
+#buylistHeader div.lower #accountDiv a:hover, #buylistHeader div.lower #accountDiv a:active {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+#buylistHeader div.lower #accountDiv div.LogIn, #buylistHeader div.lower #accountDiv div.ContactUs,
+#buylistHeader div.lower #accountDiv div.YourCart {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/AccountBtnBg.png) repeat-x left top;
+  border: 1px solid #000000;
+  color: #FFF;
+  font-size: 14px;
+  height: 19px;
+  float: left;
+  margin-right: 7px;
+}
+
+#buylistHeader div.lower #accountDiv div.LogIn {
+  min-width: 49px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: auto;
+  padding-top: 1px;
+}
+
+#buylistHeader div.lower #accountDiv div.ContactUs {
+  min-width: 84px;
+  width: auto;
+  padding-top: 1px;
+}
+
+#buylistHeader div.lower #accountDiv div.YourCart, #buylistHeader div.lower #accountDiv div.YourCart div.YourCartInner {
+  margin-right: 0px;
+  width: auto;
+}
+
+#buylistHeader div.lower #accountDiv div.YourCart {
+  float: left;
+  height: 20px;
+  margin-right: 5px;
+  width: auto;
+}
+
+#buylistHeader div.lower #accountDiv div.YourCart div.YourCartInner {
+  width: auto;
+}
+
+#buylistHeader div.lower #accountDiv div.YourCart div.YourCartInner div.cart_img {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/BuylistCartImg.png) no-repeat left top;
+  float: left;
+  height: 12px;
+  margin-right: 10px;
+  top: 4px;
+  left: 5px;
+  width: 15px;
+}
+
+#buylistHeader div.lower #accountDiv div.YourCart div.YourCartInner div.qty_price {
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+  width: auto;
+}
+
+#buylistHeader div.lower #buycart_container {
+  background-color: #E1E8FB;
+  border: 1px solid #777;
+  clear: both;
+  display: none;
+  height: 95px;
+  position: absolute;
+  right: 8px;
+  top: 34px;
+  text-align: center;
+  width: 190px;
+  z-index: 9998;
+}
+
+#buylistHeader div.lower #buycart_container button {
+  background-color: #404040;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0px auto;
+  position: relative;
+  top: 4px;
+  width: 175px;
+}
+
+#buylistHeader div.lower #buycart_container button:hover {
+  background-color: rgb(13, 128, 13);
+}
+
+#buylistHeader div.lower #buycart_container button:first-child {
+  margin-bottom: 5px;
+}
+
+#buylistHeader #infoDropDown {
+  display: none;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#buylistHeader .dropdown {
+  overflow: visible;
+  position: absolute;
+}
+
+#buylistHeader .dropdown > div {
+  border: 1px solid #777;
+  border-radius: 0px 0px 0em 0em;
+  background-attachment: scroll;
+  background-color: #E1E8FB;
+  background-clip: border-box;
+  background: url('https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/cssImages/hexMenuLowerRightCornerTouch.png'), -webkit-linear-gradient(top, #EEE 0%, #797979 100%);
+  background: url('https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/cssImages/hexMenuLowerRightCornerTouch.png'), -moz-linear-gradient(center top, #EEE 0%, #797979 100%);
+  background: url('https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/cssImages/hexMenuLowerRightCornerTouch.png'), -o-linear-gradient(center top, #EEE 0%, #797979 100%);
+  background: url('https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/cssImages/hexMenuLowerRightCornerTouch.png'), -ms-linear-gradient(center top, #EEE 0%, #797979 100%);
+  background: url('https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/cssImages/hexMenuLowerRightCornerTouch.png'), linear-gradient(center top, #EEE 0%, #797979 100%);
+  background-origin: padding-box;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  padding-bottom: 2em;
+  text-align: left;
+  width: 30em;
+  z-index: 10;
+}
+
+
+#buylistHeader #infoDropDown div {
+  padding: 0px;
+  width: 17em;
+  z-index: 10;
+}
+
+#buylistHeader .dropdown > div > ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
+#buylistHeader .dropdown > div > ul > li {
+  border-bottom: 1px solid #777;
+  padding: 0.5em;
+}
+
+#buylistHeader .dropdown > div > ul > li > a {
+  text-decoration: none;
+}
+
+#buylistHeader #infoDropDown div ul {
+  list-style: none outside none;
+  margin: 0px;
+  padding: 0.3em 0px 0px;
+  width: 100%;
+}
+
+#buylistHeader #infoDropDown div ul a {
+  color: #000;
+  font-weight: bold;
+  transition: color .4s linear;
+  -webkit-transition: color .4s linear;
+}
+
+#buylistHeader #infoDropDown div ul a:hover {
+  color: white;
+}
+
+#buylistHeader #loginSection {
+  background-color: #C7E5F9;
+  border: 1px solid #777;
+  display: none;
+  width: 150px;
+  z-index: 9999;
+}
+
+#buylistHeader #loginSection form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+}
+
+#buylistHeader #loginSection form #loginBox #loginBoxWrapper input[type=text],
+#buylistHeader #loginSection form #loginBox #loginBoxWrapper input[type=password] {
+  border: 1px solid #AAA;
+}
+
+#buylistHeader #loginSection form #loginBox #loginBoxWrapper input[type=submit] {
+  background: #FA8C00;
+  background: -webkit-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -moz-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -o-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -ms-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: linear-gradient(top, #fac800 0%, #fa6400 100%);
+  border: 0;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 10px;
+  width: 100%;
+}
+
+div.dept_nav_container {
+  font-size: 18px;
+  margin-bottom: 5px;
+  min-height: 21px;
+  max-width: 550px;
+}
+
+div.dept_nav_container span {
+  background: #FFF;
+  border: 1px solid #127BC0;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-top: 1px;
+  padding-right: 5px;
+  min-width: 50px;
+}
+
+div.dept_nav_container span a:link, div.dept_nav_container span a:visited,
+div.dept_nav_container span a:hover, div.dept_nav_container span a:active {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+/* Buylist Content */
+#buylist_container {
+  font-size: 1em;
+  min-height: 600px;
+  min-width: 1366px;
+  left:10px;
+}
+
+#buylist_container div.buylist_left_col, #buylist_container div.buylist_display_col, #buylist_container div.UploadSpreadsheet {
+  float: left;
+}
+
+#buylist_container div.buylist_left_col, #buylist_container div.buylist_display_col {
+  margin-right: 10px;
+}
+
+#buylist_container div.buylist_left_col {
+  max-width: 241px;
+  width: 18.9967%;
+}
+
+#buylist_container div.buylist_left_col .BuylistNav {
+  border: 1px solid rgb(20, 123, 192);
+  margin-bottom: 7px;
+  width: 240px;
+  z-index: 1;
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul {
+  background-color: #FFF;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul li {
+  padding: 0.25em 0em 0.20em 0.25em;
+  border-bottom: 2px solid rgb(20, 123, 192);;
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul li:hover {
+  background: rgb(199,229,249);
+  background: -moz-linear-gradient(left,  rgba(199,229,249,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(199,229,249,1)), color-stop(100%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(left,  rgba(199,229,249,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left,  rgba(199,229,249,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left,  rgba(199,229,249,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right,  rgba(199,229,249,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 100%);
+}
+
+
+#buylist_container div.buylist_left_col .BuylistNav ul li:first-child {
+  text-indent: 5px;
+  padding: 8px 5px 0px 0px;
+  border-bottom:0px;
+}
+#buylist_container div.buylist_left_col .BuylistNav ul li:first-child:hover {
+  background: rgb(16, 63, 150);
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul li:last-child {
+  border-bottom:0px;
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul li:nth-child(1n+1) {
+}
+
+#buylist_container div.buylist_left_col .BuylistNav ul li a:link, #buylist_container div.buylist_left_col .BuylistNav ul li a:visited,
+#buylist_container div.buylist_left_col .BuylistNav ul li a:hover, #buylist_container div.buylist_left_col .BuylistNav ul li a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+#buylist_container div.buylist_left_col .HowToSell {
+  background: rgb(20, 123, 192) url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/HowToSellBlue.png) no-repeat left top;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 53px;
+  width: 241px;
+}
+
+#buylist_container div.buylist_left_col .ReturnHome {
+  background: #ddd url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/ReturnTrollAndToadNormal.png) center;
+  cursor: pointer;
+  height: 73px;
+  margin-bottom: 7px;
+  width: 241px;
+}
+
+#buylist_container div.buylist_left_col .ReturnHome:hover {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/ReturnTrollAndToadHover.png);
+  cursor: pointer;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions {
+  background-color: #FFF;
+  height: 128px;
+  margin-bottom: 7px;
+  width: 239px;
+  border: 1px solid rgb(20, 123, 192);
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions .SignUpHeader {
+  background-color: rgb(16, 63, 150);
+  color: #FFF;
+  font-size: 15px;
+  height: 24px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions .SignUpHeader span {
+  position: relative;
+  top: 2px;
+  left: 8px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form,
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup,
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup div {
+  font-size: 16px;
+  width: 100%;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup {
+  margin-top: 12px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup div:first-child {
+  margin-top: 5px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup div input,
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.RadioGroup div label {
+  margin-bottom: 10px;
+  position: relative;
+  left: 45px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.SignUpEmail {
+  height: 24px;
+  left: 12px;
+  top: 8px;
+  width: 211px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.SignUpEmail #mce-EMAIL {
+  border-bottom: 1px solid rgb(164, 164, 164);
+  border-left: 1px solid rgb(164, 164, 164);
+  border-top: 1px solid rgb(164, 164, 164);
+  float: left;
+  height: 20px;
+  width: 141px;
+}
+
+#buylist_container div.buylist_left_col .SignUpForPromotions form div.SignUpEmail #mc-embedded-subscribe {
+  background: #FA8C00;
+  background: -webkit-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -moz-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -o-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -ms-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: linear-gradient(top, #fac800 0%, #fa6400 100%);
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  float: left;
+  height: 24px;
+  position: relative;
+  left: -1px;
+  width: 64px;
+}
+
+#buylist_container div.buylist_left_col .BuyingCenterFacebook {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/BuyingCenterFacebookBlue.png);
+  cursor: pointer;
+  height: 128px;
+  width: 239px;
+  border: 1px solid rgb(20, 123, 192);
+}
+
+#buylist_container div.buylist_display_col {
+  background-color: #FFF;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 51.97657%;
+}
+
+.buylist-confirm #buylist_container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent {
+  text-align: left;
+  min-height: 751px;
+  border: 1px solid rgb(20, 123, 192);
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent form {
+  left: 0px;
+  width: 100%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContentTitle {
+  text-align: left;
+  text-indent: 7px;
+}
+
+#buylist_container div.buylist_display_col span.login {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+  left: 24px;
+}
+
+/* Search Bar */
+
+#buylist_container div.buylist_display_col div.BuylistContent form {
+  position: relative;
+  width: 100%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element {
+  width: 100%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 93.9%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar {
+  border: 1px solid #000;
+  height: 21px;
+  width: 100%;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar div#selected-department,
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar div#search-downarrow,
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar input#search-words,
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar button#search-submit {
+  float: left;
+  height: 21px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar div#selected-department {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/Buylist2.0/DeptDropDownBtn.png) no-repeat right rgb(13,128,13);
+  border-right: 1px solid #FFF;
+  color: #FFF;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-align: center;
+  width: 215px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar #search-category {
+  background: transparent;
+  color: #FFF;
+  border: none;
+  height: 20px;
+  width: 235px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar div#search-downarrow div.triangle {
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: #ffffff transparent transparent transparent;
+  height: 0;
+  margin: 0px auto;
+  top: 8px;
+  width: 0;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar input#search-words {
+  border: none;
+  color: rgb(153,153,153);
+  font-style: italic;
+  height: 19px;
+  text-indent: 10px;
+  width: calc(100% - 258px);
+}
+
+@-moz-document url-prefix() {
+  #buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar input#search-words {
+    width: calc(100% - 260px);
+  }
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent form #search-element #searchDiv #searchbar button#search-submit {
+  background: rgb(13,128,13);
+  background: -moz-linear-gradient(top,  rgba(13,128,13,1) 1%, rgba(5,53,8,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(13,128,13,1)), color-stop(100%,rgba(5,53,8,1)));
+  background: -webkit-linear-gradient(top,  rgba(13,128,13,1) 1%,rgba(5,53,8,1) 100%);
+  background: -o-linear-gradient(top,  rgba(13,128,13,1) 1%,rgba(5,53,8,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(13,128,13,1) 1%,rgba(5,53,8,1) 100%);
+  background: linear-gradient(to bottom,  rgba(13,128,13,1) 1%,rgba(5,53,8,1) 100%);
+  border: none;
+  color: #FFF;
+  float: right;
+  width: 39px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent ol.using-this-page {
+  position: relative;
+  left: 55px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent #BuylistMediaPlayer,
+#buylist_container div.buylist_display_col div.BuylistContent #BuylistMediaPlayer2 {
+  min-height: 449px;
+  max-height: 600px;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+#buylist_container div.UploadSpreadsheet {
+  float: left;
+  margin-bottom: 5px;
+  max-width: 390px;
+  width: 28.55051%;
+}
+
+#buylist_container div.UploadSpreadsheet form div.buylist-feedback {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(20, 123, 192);
+  clear: both;
+  width: 388px;
+}
+
+#buylist_container div.UploadSpreadsheet form div.buylist-feedback #email {
+  width: 300px;
+  margin-left:10px;
+  margin-bottom:10px;
+}
+
+#buylist_container div.UploadSpreadsheet form div.buylist-feedback textarea {
+  height: 100px;
+  width: 300px;
+  margin-left:10px;
+  margin-bottom:10px;
+}
+
+#buylist_container div.UploadSpreadsheet form div.buylist-feedback button {
+  background: #FA8C00;
+  background: -webkit-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -moz-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -o-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -ms-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: linear-gradient(top, #fac800 0%, #fa6400 100%);
+  border: 0px none;
+  color: #FFF;
+  cursor: pointer;
+  margin-left:10px;
+  margin-top:5px;
+  padding: 3px 10px;
+}
+
+#buylist_container div.UploadSpreadsheet form div.buylist-feedback input[type=reset] {
+  background: #FA8C00;
+  background: -webkit-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -moz-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -o-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -ms-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: linear-gradient(top, #fac800 0%, #fa6400 100%);
+  border: 0px none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+#CSVUpload {
+  background-color: #FFF;
+  border: 1px solid rgb(20, 123, 192);
+  margin-bottom: 7px;
+  padding-bottom: 10px;
+}
+
+#CSVUpload select, #CSVUpload input[type=button] {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+#CSVUpload #download {
+  margin-bottom: 10px;
+}
+
+#CSVUpload #filename {
+  border: 1px solid #aaa;
+}
+
+#CSVUpload input[type=file] {
+  display: none;
+}
+
+#CSVUpload input[type=button], #CSVUpload input[type=submit] {
+  background: #FA8C00;
+  background: -webkit-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -moz-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -o-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: -ms-linear-gradient(top, #fac800 0%, #fa6400 100%);
+  background: linear-gradient(top, #fac800 0%, #fa6400 100%);
+  border: 0;
+  color: #FFF;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+#CSVUpload #filename, #CSVUpload input[type=submit], #CSVUpload input[type=checkbox] {
+  margin-left: 5px;
+}
+
+/* Categories */
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu {
+  list-style-type: none;
+  text-align: left;
+  text-indent: 15px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li {
+  padding: 5px 0px 5px 0px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li:nth-child(2n+2) {
+  background-color: rgb(199, 229, 249);
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li a:link,
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li a:active {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li a:visited {
+  text-decoration: none;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .category_menu li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Buylist Listing */
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table {
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table thead {
+  color: #FFF;
+  height: 35px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table thead tr {
+  background-color: rgb(16, 63, 150);
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table thead tr th {
+  padding: 0.25em 0.25em 0.25em 0.25em;
+  text-align: left;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table thead tr th:nth-child(1) {
+  text-indent: 10px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table tbody tr:nth-child(2n+2) {
+  background-color: rgb(199, 229, 249);
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table thead tr th.buylist_buyqty {
+  padding-right: 0px !important;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table tbody tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .buylist_product_table tbody tr td.buylist_buyqty span {
+  position: relative;
+  right: 8px;
+}
+
+/* Cart Review */
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table {
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead {
+  color: #FFF;
+  height: 35px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr {
+  background-color: rgb(16, 63, 150);
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr th {
+  padding: 0.25em 0.25em 0.25em 0.25em;
+  text-align: left;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr th:nth-child(1) {
+  text-indent: 10px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr:nth-child(2n+2) {
+  background-color: rgb(199, 229, 249);
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr th.cartreview_buyqty {
+  padding-right: 0px !important;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr th.cartreview_cart_totalprice {
+  text-align: right;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table thead tr th.cartreview_cart_totalprice span {
+  position: relative;
+  right: 8px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr td.cartreview_buyqty span {
+  position: relative;
+  right: 8px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr td.cartreview_cart_total_label span {
+  position: relative;
+  left: 10px;
+}
+
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr td.cartreview_total span,
+#buylist_container div.buylist_display_col div.BuylistContent .cartreview_product_table tbody tr td.cartreview_cart_totalprice span {
+  position: relative;
+  right: 8px;
+}
+
+/* Buylist Confirm */
+
+.buylist-confirm #buylist_container,
+.buylist-confirm #buylist_container div.buylist_display_col {
+  background: none;
+  border:none;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px !important;
+  width: 73%;
+}
+
+@-moz-document url-prefix() {
+  .buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 72%;
+  }
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm {
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 750px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm fieldset {
+  margin-top:15px;
+}
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm fieldset legend {
+  font-weight:bold;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod {
+  clear: both;
+  width: 100%;
+  min-width: 998px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #addr_section,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #pm_section {
+  float: left;
+  width: 49.5%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #addr_section {
+  margin-right: 10px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #pm_section .trollcash#trollcashneeded {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -webkit-linear-gradient(top, #966400 0%, #4B3200 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -moz-linear-gradient(top, #966400 0%, #4b3200 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -ms-linear-gradient(top,  #009600 0%, #004b00 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -o-linear-gradient(top, #966400 0%, #4B3200 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, linear-gradient(to bottom, #966400 0%, #4B3200 90%);
+  margin-top:23px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #pm_section .trollcash#trollcashexceeded {
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -webkit-linear-gradient(top, #009600 0%, #004B00 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -moz-linear-gradient(top, #009600 0%, #004B00 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -ms-linear-gradient(top, #009600 0%, #004B00 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, -o-linear-gradient(top, #009600 0%, #004B00 90%);
+  background: url(https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/media/dollarTile.png) center center repeat, linear-gradient(to bottom, #009600 0%, #004b00 90%);
+  margin-top:23px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #addr_paymethod #notes_section {
+  float: left;
+  width: 49.5%;
+}
+
+#addressDetails .addrTableInputs {
+  padding: 5px 20px;
+}
+#addressDetails input {
+  width:217px;
+}
+#addressDetails select {
+  width:221px;
+}
+
+#shippingDetails #shippingmethodid {
+  font-size: 11pt;
+  width: 250px;
+}
+
+#shippingDetails #shippingmethodid option:nth-child(1),
+#shippingDetails #shippingmethodid option:nth-child(2),
+#shippingDetails #shippingmethodid option:nth-child(3) {
+  margin-bottom: 3px;
+}
+
+#shippingDetails #shippingmethodid option:nth-child(2),
+#shippingDetails #shippingmethodid option:nth-child(3) {
+  text-indent: 10px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #cartchanges,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #cartchanges table,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table {
+  width: 100%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #cartchanges,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder {
+  clear: both;
+  padding-top: 10px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #cartchanges table {
+  font-size: 13px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table thead th {
+  background-color: rgb(199, 229, 249);
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table thead th,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table tbody tr,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table tbody tr td {
+  padding: 5px 0px;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder table tbody tr:nth-child(2n+2) {
+  background-color: rgb(199, 229, 249);
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action {
+  width: 100%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td {
+  width: 50%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td a:link,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td a:visited,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td a:active,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td div,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td input {
+  background-color: #404040;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  height: 40px;
+  width: 99%;
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td div:hover,
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td input:hover {
+  background-color: rgb(13, 128, 13);
+}
+
+.buylist-confirm #buylist_container div.buylist_display_col div.BuylistContent #BuylistForm #confirmorder #buylistconfirm-action tbody tr td div span {
+  position: relative;
+  top: 5px;
+}
+
+#paypalemail_container {
+  display: none;
+  margin-top: 5px;
+}
+
+#nocheck {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+#ordercomment {
+  width: 98%;
+  resize: none;
+}
+
+#agreement-table, #agreement-table tr td div.agreement {
+  width: 100%;
+}
+
+#agreement-table tr td div.agreement {
+  text-align: center;
+}
+
+#contactDeduction {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#contactDeduction input{
+  margin-left: 10px;
+}
+#contactDeduction a{
+  color:blue;
+  margin-right: 940px;
+  font-size: 12px;
+}
+
+/* BUYLIST RC Order Receipt */
+
+.fineprint {
+  font-size: 16px;
+}
+
+.tdrow0 {
+  color: #000;
+  font-family: verdana,arial,helvetica;
+  font-size: 8pt;
+  background-color: #FFF;
+}
+
+.tdrow1 {
+  background-color: #EFEFEF;
+  color: #000;
+  font-family: verdana,arial,helvetica;
+  font-size: 8pt;
+  font-weight: normal;
+}
+
+.underline {
+  border-bottom: 1px solid #000;
+}
+
+#receipt-form {
+  background-color: #FFF;
+}
+
+#receipt-form fieldset {
+  border: 2px solid #999;
+}
+
+#receipt-form div.receipt-title {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#receipt-form div.receipt-info {
+  height: 135px;
+  width: 100%;
+}
+
+#receipt-form div.receipt-info div.shipping-info, #receipt-form div.receipt-info div.receipt-date, #receipt-form div.receipt-info div.receipt-order-number {
+  float: left;
+}
+
+#receipt-form div.receipt-info div.shipping-info fieldset, #receipt-form div.receipt-info div.receipt-date fieldset, #receipt-form div.receipt-info div.receipt-order-number fieldset {
+  height: 100px;
+}
+
+#receipt-form div.receipt-info div.shipping-info {
+  width: 35%;
+}
+
+#receipt-form div.receipt-info div.receipt-date {
+  text-align: center;
+  width: 30%;
+}
+
+#receipt-form div.receipt-info div.receipt-date span {
+  font-size: 18px;
+}
+
+#receipt-form div.receipt-info div.receipt-order-number {
+  text-align: center;
+  width: 35%;
+}
+
+#receipt-form div.receipt-info div.receipt-order-number span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#receipt-form div.receipt-product-list, #receipt-form div.receipt-instructions {
+  margin-bottom: 15px;
+}
+
+#product-list-table {
+  width: 100%;
+}
+
+#product-list-table td.fineprint ul {
+  position: relative;
+  left: 25px;
+}
+
+#processing-list-table {
+  border-collapse: collapse;
+}
+
+#processing-list-table>tbody>tr:last-child td {
+  border-bottom: 2px solid #999;
+}
+
+#processing-list-table td, #processing-list-table th {
+  padding: 5px 15px;
+}
+
+#processing-list-table td.borderLeft, #processing-list-table th.borderLeft {
+  border-left: 2px solid #999;
+}
+
+#processing-list-table td.borderBottom, #processing-list-table th.borderBottom {
+  border-bottom: 2px solid #999;
+}
+
+#processing-list-table td.borderTop, #processing-list-table th.borderTop {
+  border-top: 2px solid #999;
+}
+
+#processing-list-table td.borderRight, #processing-list-table th.borderRight {
+  border-right: 2px solid #999;
+}
+
+#processing-list-table th.title {
+  font-size: 1.5em;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}

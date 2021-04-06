@@ -1,0 +1,547 @@
+---
+title: "Stats in Cross-Linguistic Interactions in Third Language Acquisition: Evidence from Multi-Feature Analysis of Speech Perception"
+subtitle: "DS4Ling: Spring 2021 Wrembel et al. (2020)"
+author: "Kyle Parrish"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    nature:
+      beforeInit: 
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    
+---
+
+```{r, setup, include=FALSE}
+
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+source(here::here("scripts", "fake_data_script.R"))
+
+```
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Times New Roman", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+
+style_duo(primary_color = "#1F4257", secondary_color = "#F97B64")
+
+
+```
+
+
+# Brief Overview
+
+--
+
+This is a study of cross-linguistic influence in the **perception** of rhotics and final obstruent (de)voicing in **young L3 learners**. 
+
+--
+
+The participants were learning **L3 English** and spoke **L1 Polish** and **L2 German**.
+
+--
+
+In order to determine the **directionality** and **degree/size** of cross-linguistic influence, the participants completed a (2-alternative) forced-choice goodness task in their L2 German and L3 English during two time periods: T1, after 5 months of L3 learning and T2, after 10 months of L3 learning. Both accuracy and reaction times were measured during the task. 
+
+
+---
+
+# Participant profiles 
+
+Though background info was not directly analyzed, the authors report this information in their **table 1**. I see this as good practice, particularly in L2/L3 acquisition, where age effects are likely important/relevant to many research questions. 
+
+--
+
+**Issue** self-reported proficiency is not an objective measure. 
+
+--
+
+There is no way to know whether speakers' judgments of their own proficiency is accurate. 
+
+```{r, out.width="65%"}
+knitr::include_graphics("assets/img/table1.png")
+```
+
+---
+
+# Rhotics and obstruent devoicing across the languages 
+
+The authors made this nice table to help the reader understand that:
+
+
+- Rhotics are different in each Polish, English and German.
+
+
+- That there is obstruent final devoicing in the contexts they are studying in **Polish** and **German**, but not in **English**. 
+
+
+```{r, out.width="65%"}
+knitr::include_graphics("assets/img/table2.png")
+```
+
+---
+
+# Research Questions and hypotheses
+
+These were the specific research questions that guided this study: 
+
+--
+
+RQ1. Is there evidence of CLI in the perception of L2 English and L3 German?
+
+--
+
+**Hypothesis 1 (H1).** *Both phonological feature and language determine perception accuracy and reaction times. There will be less CLI in the learners’ L2 English than their L3 German.*
+
+--
+
+RQ2. Is there a perceptual development over time caused by a change in CLI? Does the perceptual
+development in L3 parallel that in L2?
+
+--
+
+**Hypothesis 2 (H2).** *There will be changes in CLI across time. The developmental patterns of CLI differ between the learners’ L2 English and L3 German.*
+
+---
+
+# Stimuli 
+
+To examine CLI, the authors created stimuli that differed in only one target-language like segment, or an accented version of that segment in a carrier sentence. 
+
+--
+
+Participants heard two versions of the same sentence, such as:
+
+  You will hear the word **r**ing
+
+--
+
+  In one version of this sentence, the rhotic *r* was English like, and in the other, it was either German or    Polish like. 
+
+--
+
+One trial consisted of the participants hearing two versions of the same sentence - they then had to pick which of those two renditions was more "natural", a two-alternative forced choice. 
+
+--
+
+Participants completed this task in both **English** and **German**, they had two conditions (rhotics and final obstruent devoicing), and two times (T1, 5 months after L3 initial instruction, T2, 10 months after L3 initial instruction).
+
+--
+
+The **accuracy** and **reaction times** of these trials were measured. 
+
+---
+
+# Choice of analysis 
+
+To test for differences in both accuracy and RTs between T1 and T2 the authors chose to use 2 non-parametric tests of independence: 
+
+--
+
+**Between-subjects** (Mann–Whitney U-test) 
+
+--
+
+**Within-subjects** (Wilcoxon signed-rank test) 
+
+--
+
+The authors also ran two GLMs (general linear models), to examine the predictor variables' relative roles in predicting the outcome variables: **accuracy in L2 English** and **accuracy in L3 German** of the identification of the correct language specific feature in the 2-alternative forced choice goodness task. 
+
+---
+
+# Tests of independence
+
+.pull-left[**Accuracy**
+
+The authors created several tables (3, 5, 7) in their study to report accuracy (whether the participant chose the target-like sound from two choices) for each language context, feature and time.
+
+The highlights: 
+- L3 German rhotic accuracy was **lower** at T2 that T1 - not as expected (table 3, Z = 4.5, p < 0.05)
+- Rhotics were more accurately perceived than obsrtuents in each time and language, except for German T2 (table 5, Z = .52 p < 0.6028 )
+- The accuracy of obstruent devoicing perception between the L2 and the L3 was distinct at T1 (table 7, Z = 2.70, p < 0.007), but not T2 (Z = 1.02, p < 0.3075). 
+]
+
+```{r, out.width="40%"}
+
+knitr::include_graphics("assets/img/table3.png")
+knitr::include_graphics("assets/img/table5.png")
+knitr::include_graphics("assets/img/table7.png")
+
+
+```
+
+---
+
+# Tests of independence
+
+.pull-left[
+
+**RTs**
+
+The same analyses were applied to reaction times.
+
+The highlights: 
+
+- Participants did not process faster from T1 to T2 in the same language and feature, except in L3 German obstruent devoicing (table 4, Z = 2.14, p < 0.05)
+
+- Only 1 of 4 conditions (L3 German at T1 (table 6, Z = 2.98 p < 0.0029)) found that one feature was processed faster than the other at the same time. 
+
+- It took longer to process the perception task in the L3 than in the L2 in 3 of 4 conditions (Table 8).
+
+]
+```{r, out.width="40%"}
+
+knitr::include_graphics("assets/img/table4.png")
+knitr::include_graphics("assets/img/table6.png")
+knitr::include_graphics("assets/img/table8.png")
+
+```
+
+---
+
+# Correlations 
+
+No statistically significant correlations were found between **perception accuracy** and **reaction time**
+for L2 English and L3 German performance in the perception of rhotics and final devoicing at either T1
+or T2 (see Table 9). 
+
+--
+
+This suggests that the speed at which one answers was **not** correlated to their correctness. 
+
+
+
+```{r, out.width="65%"}
+knitr::include_graphics("assets/img/table9.png")
+```
+
+---
+
+# GLM
+
+The authors ran two GLMS (general linear models)
+
+The dependent variable was perception accuracy and independent variables included RT, testing time (T1 and T2) and feature (obstruent devoicing and rhotics).
+
+--
+
+The first model predicts the **response accuracy in L2 English** 
+
+Only *feature* was found to be a predictor for *accuracy in L2 English*
+
+--
+
+This suggests that one feature, *rhotics* was easier to perceive langauge-specific contrasts than the final obstruent devoicing, and that this did not change between T1 and T2. Also RT did not predict accuracy. 
+
+```{r, out.width="65%"}
+knitr::include_graphics("assets/img/table10.png")
+```
+
+---
+
+# GLM
+
+The second model predicts the **response accuracy in L3 German** 
+
+
+This model revealed more predictors - *testing time*, *feature*, and a *time x feature* interaction. 
+
+--
+
+This suggests that there was a change from T1 to T2, that one feature was harder than the other, and that which feature was harder or not depended upon the time. In specfic, the rhotic accuracy went down from T1 to T2. 
+
+```{r, out.width="65%"}
+knitr::include_graphics("assets/img/table12.png")
+```
+
+---
+
+# How did they do these analyses? 
+
+The authors used a program called `STATISTICA 10` for their analyses.
+
+--
+
+The linear regressions could have also been done in R using the `lm` function.
+
+--
+
+The formula for the **first model** (depending on variable names) would look similar to this: 
+
+`Accuracy for L2 English ~ RT + testing time:feature`
+
+--
+
+The forumula for the **second model** would be the same except for the outcome variable, which would be `accuracy for L3 German`
+
+---
+
+# How did they do these analyses? 
+
+To do the within subjects Paired Samples Wilcoxon Test Signed Rank Test and the Mann–Whitney U-test in R, the `wilcox.test` function from the `stats` package can be used. This method is very similar to the **t-test**
+
+--
+
+For the *between subjects* Mann-Whitney U-test, use `wilcox.test(x ~ y)`, where `x` and `y` are numerical vectors
+
+--
+
+For the *within subjects* Wilcoxon Test Signed Rank Test, use `wilcox.test(x ~ y, paired=TRUE)` - the same code, but `paired=TRUE` 
+
+---
+
+# Novelty and apporpriateness 
+
+This analysis seemed appropriate, and relatively well designed overall, but there were some things I would change. 
+
+--
+
+The combination of Wilcoxon signed-rank test and Mann–Whitney U-test did not always correspond to a research question, although the information gained by them was useful in general. 
+
+--
+
+For example, the difference between *features* was not discussed in the research questions (RQs), but it was analyzed in both tests of independence. Either adding a question about features to the RQs or discluding analyses that aren't immediately relevant would have improved the analyses. 
+
+--
+
+I was unsure of the motivation for including reaction times (RTs) in their analyses (both tests of independence and as a predictor in the GLMs). These were not discussed in the research questions, and a variable's inclusion in a model should be theoretically justified. 
+
+---
+
+# Did they do something you haven’t seen before? What? Why? How?
+
+The non-parametric tests of independence (The Wilcoxon signed-rank test and the Mann-Whitney U-test) were something I had not seen before (or had seen and had no idea what I was looking at).
+
+--
+
+I briefly discussed how this analysis would be done in R in a previous slide - it's very similar to running a t-test, just with a different function. 
+
+--
+
+The authors explained that they used these tests were used in placed of t-tests due to the non-normal distribution of the data. The authors don't explain the distribution of their data more specifically, but I suspect that its lack of normality may have come from the small sample size in the study (13 participants).   
+
+---
+
+# Likes and dislikes 
+
+**Likes**
+
+Generally, the authors had a clear accessible description of their analyses.
+
+--
+
+The process of the analysis would be rather easy to reproduce given their data.
+
+
+---
+
+# Likes and dislikes 
+
+**Dislikes**
+
+**Variables were used in the analysis that were not covered in the RQs**, and analyses were done that did not answer a RQ (tables 6, 7, 8)
+
+**The visualization of variability** in the L2 and L3 at T1 and T2 for both features was done in several bar graphs - this likely could have been done in fewer graphs - `ggplot` could likely handle this.  
+
+--
+
+**Exclusion of participants and data** -  The participants who were included and excluded was not always clear - the authors note that 13 participants were chosen from what was originally 24 participants (p. 5), so that the participants had a more "homogeneous profile"
+
+However, figure 1-8 (the bar graphs) seem to show 22 participants.
+
+---
+
+# The graphs 
+
+The authors showed a total of 8 bar graphs to demonstrate that "in general, more inter- and intraspeaker variability occurs in L3 German than in L2 English, in which individual perceptual performance seems more homogeneous across learners." (p. 13).
+
+The authors included one graph per time, per feature, and per language (2 x 2 x 2).
+
+--
+
+I won't make you look at all 8 graphs. 
+
+An example: 
+
+**Figure 1.** Perception accuracy in L2 English for obstruent devoicing at T1.
+
+```{r, out.width="50%"}
+knitr::include_graphics("assets/img/figure1.png")
+```
+
+---
+
+# Likes and dislikes 
+
+Additionally, the source of **N** in tables 3-8 is rather unclear. 
+
+--
+
+For example, the authors report a range of N for rhotics, which they use for their tests of independence, ranging from 94-107. 
+
+--
+
+With 13 participants (or 22, or 24), it's unclear how, firstly, they got to these numbers, such as the N column in table 7 (I assume they're single trials, but the authors don't report exactly how many repetitions of each stimulus and particular combinations of those stimuli the participants heard), and, secondly, whether they removed some data of single trials. 
+
+
+```{r, out.width="60%"}
+knitr::include_graphics("assets/img/table7.png")
+```
+
+---
+
+# Suggested Plots 
+
+Instead of just talking junk about their graphs, I thought it would be more fair to show an alternative visualization option. 
+
+--
+
+To demonstrate that the variability the authors observed in the L3 but not the L2 could be shown in less than 8 graphs, I used their descriptive statistics reported in tables 11 and 15 to create a dataframe for plotting purposes. 
+
+--
+
+The data was created using the **tibble** function, together with **mutate**. The script is under "scripts" in the repo used to host this presentation. 
+
+---
+
+# Hypothetical plots 
+
+.pull-left[
+I made two plots. 
+
+The first shows the **performace accuracy for rhotics** on the 2-alternative forced choice goodness task in both English and German, at T1 and T2.
+
+This graph, and many others like it, can provide a visualization for a single feature between languages and across time. 
+
+
+]
+
+.pull-right[
+```{r}
+
+fake_data %>% 
+  filter(feature == "rhotic") %>%
+  ggplot(aes(y = accuracy, x = language, color = time)) + geom_boxplot() + 
+  ggtitle("Hypothetical graph of rhotic variation at T1 and T2") + 
+  ylim(0,1)
+
+
+```
+]
+
+---
+
+# Hypothetical plots 
+
+.pull-left[
+The second shows the **performace accuracy for final obstruent devoicing** on the 2-alternative forced choice goodness task in both English and German, at T1 and T2.
+
+
+The authors could have done something similar as an alternative to 8 individual bar graphs.
+
+]
+
+.pull-right[
+```{r}
+fake_data %>% 
+  filter(feature == "obstruent") %>%
+  ggplot(aes(y = accuracy, x = language, color = time)) + geom_boxplot() + 
+  ggtitle("Hypothetical graph of rhotic variation at T1 and T2") + 
+  ylim(0,1)
+```
+]
+
+---
+
+# Suggested Plots 
+
+**Disclaimer**: These plots are examples of visualizations only, as they were generated as a normal distributed data set. The authors note that their data was not normally distributed.
+
+--
+
+**Disclaimer 2**: The dataset I generated has 1038 observation and was created with the `rnorm` function - the bar graphs show mean accuracy per participant per condition. As such, my example should have had around 96 observations. These plots, though, are simply a visualization suggestion, and I do not suggest that it is a highly accurate characterization of their data. 
+
+---
+
+# Revisiting the RQs 
+
+Recall the researchers' first RQ:
+
+1. Is there evidence of CLI in the perception of L2 English and L3 German?
+
+--
+
+The authors ran an ANOVA with perception accuracy for rhotics being the dependent variable (pooled in both L2 and L3 contexts) and whether a stimulus was L1, L2 or L3 accented.  
+
+This seems like a rather confusing way to present this data, since they pooled accuracy across L2 and L3 conditions. For example "L3 accented" could be either target like, or not target like, depending upon whether it was presented in the L2 or L3 context. 
+
+
+```{r, out.width="45%"}
+knitr::include_graphics("assets/img/figure9.png")
+```
+
+---
+
+# Revisiting the RQs 
+
+
+It is unclear to me how they answered RQ1, and how this could be answered without being more specific. If the authors want to know whether the L3 and the L2 interfere with one another in perception, it would make sense that the variable of interest would be **the proportion of incorrect responses, when the L2 is being used in an L3 context**, and vice versa, the L3 rhotic being present in an L2 context. If either proportion is high, it would suggest that there is CLI between the L2 and the L3, and directionality could be derived from the data.
+
+
+---
+
+
+# Revisiting the RQs 
+
+Now, moving to the second research question:
+
+RQ2: Is there a perceptual development over time caused by a change in CLI? Does the perceptual
+development in L3 parallel that in L2?
+
+--
+
+**Table 3** shows that the only change in accuracy between T1 and T2 is for L3 German rhotics, and the participants actually were less accurate at T2. Had this been in the expected direction, though, it is hard to say whether the learners are simply becoming more proficient, or there is less CLI. 
+
+--
+
+Teasing apart the influence of L3 proficiency and the influence of L2 English on the perception of L3 rhotics (or obstruents) seems to be an ideal task for a regression model. The authors could have examined this, had they measured proficiency, or used the self-ratings as a variable in their model.  
+
+```{r, out.width="55%"}
+knitr::include_graphics("assets/img/table3.png")
+```
+
+---
+
+# Conclusion
+
+I liked the analysis of this article at first, but the more I read and thought about it, the more I found that there were some issues. 
+
+--
+
+While the analyses were informative, they were not always directly related to the RQs.
+
+--
+
+In other words, I would have suggested to these authors that they justify their analysis related to the RQ, or before having collected data asked how the RQs are being operationlized. 
+
+--
+
+It seems to me that the questions they should have been asking (ones that would match their analyses) were implicit, but should have been clearer.
+

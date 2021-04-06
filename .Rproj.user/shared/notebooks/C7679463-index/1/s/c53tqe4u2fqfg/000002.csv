@@ -1,0 +1,10 @@
+"0",""
+"0","library(dplyr)"
+"0","library(tibble)"
+"0","library(ggplot2)"
+"0",""
+"0","source(here::here(""fake_data_script.R""))"
+"2","cannot open file 'C:/Users/gallo/OneDrive/Documents/GitHub/online-presentation/fake_data_script.R': No such file or directory"
+"2","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+"
